@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapp {
+  width: 100%;
+  height: 120vh;
+  padding: 50px 165px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, rgba(187, 133, 255, 0.166) -8.54%, rgba(255, 244, 251, 0.2) 100%);
+}
+.wrapp .card__wrapp {
+  display: flex;
+  flex-direction: column;
+}
+.wrapp .card__wrapp .txt__card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.wrapp .card__wrapp .txt__card .top__txt {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.wrapp .card__wrapp .txt__card .top__txt h5 {
+  font-size: 18px;
+  line-height: 27px;
+  color: #8643DC;
+  font-family: "Poppins";
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.wrapp .card__wrapp .txt__card .top__txt h5:hover {
+  transition: 0.7s;
+  color: #000;
+  cursor: pointer;
+}
+.wrapp .card__wrapp .txt__card .top__txt .line__top {
+  width: 50px;
+  height: 2px;
+  background-color: #8643DC;
+}
+.wrapp .card__wrapp .txt__card .bottom__txt {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.wrapp .card__wrapp .txt__card .bottom__txt h3 {
+  width: 511px;
+  height: 156px;
+  font-size: 34px;
+  line-height: 52px;
+  color: #000;
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.wrapp .card__wrapp .txt__card .bottom__txt p {
+  font-size: 22px;
+  line-height: 28px;
+  text-decoration-line: underline;
+  font-family: "Roboto";
+  font-weight: 400;
+  color: #8643DC;
+  cursor: pointer;
+}
+.wrapp .card__wrapp .main__card {
+  display: flex;
+  flex-direction: column;
+}
+.wrapp .card__wrapp .main__card form {
+  display: flex;
+  flex-direction: column;
+}
+.wrapp .card__wrapp .main__card form input {
+  height: 51px;
+  background: transparent;
+  outline: none;
+  padding-left: 5px;
+  font-family: "Poppins";
+  font-weight: 400;
+  color: #8643DC;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #DAD2E3;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.wrapp .card__wrapp .main__card form input::placeholder {
+  color: #A8A0B0;
+}
+.wrapp .card__wrapp .main__card form .btn__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.wrapp .card__wrapp .main__card form .btn__row a {
+  width: 150px;
+  height: 49px;
+  border-radius: 100px;
+  background-color: #8643DC;
+  color: #fff;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.wrapp .card__wrapp .main__card form .btn__row a:hover {
+  transition: 1s;
+  background-color: #000;
+}
+.wrapp .card__wrapp .main__card form .right__btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapp .card__wrapp .main__card form .right__btns .btn__pin {
+  background-image: url("img/pin.svg");
+  background-size: cover;
+  width: 18px;
+  height: 19px;
+}
+.wrapp .card__wrapp .main__card form .right__btns .btn__arrow {
+  background-image: url("img/arrow.svg");
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-left: 16px;
+}
+
+.socials__wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.socials__wrapp h3 {
+  font-family: "Poppins";
+  font-weight: 500;
+  color: #000;
+  font-size: 28px;
+  line-height: 54px;
+}
+.socials__wrapp .btns__socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+.socials__wrapp .btns__socials .btn1__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.socials__wrapp .btns__socials .btn1__socials .triangles__btn1 {
+  background-image: url("img/triangles.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.socials__wrapp .btns__socials .btn1__socials .triangles__btn1:hover {
+  transform: rotate(90deg);
+  transition: 2s;
+}
+.socials__wrapp .btns__socials .btn1__socials .logo__btn1 {
+  background-image: url("img/instagram.svg");
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+.socials__wrapp .btns__socials .btn2__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0 35px 0 35px;
+}
+.socials__wrapp .btns__socials .btn2__socials .triangles__btn2 {
+  background-image: url("img/triangles.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.socials__wrapp .btns__socials .btn2__socials .triangles__btn2:hover {
+  transform: rotate(90deg);
+  transition: 2s;
+}
+.socials__wrapp .btns__socials .btn2__socials .logo__btn2 {
+  background-image: url("img/twitter.svg");
+  background-size: cover;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+}
+.socials__wrapp .btns__socials .btn3__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.socials__wrapp .btns__socials .btn3__socials .triangles__btn3 {
+  background-image: url("img/triangles.png");
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+.socials__wrapp .btns__socials .btn3__socials .triangles__btn3:hover {
+  transform: rotate(90deg);
+  transition: 2s;
+}
+.socials__wrapp .btns__socials .btn3__socials .logo__btn3 {
+  background-image: url("img/github.svg");
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+
+/*# sourceMappingURL=style.css.map */

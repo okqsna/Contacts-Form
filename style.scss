@@ -1,0 +1,239 @@
+$roboto:'Roboto';
+$poppins:'Poppins';
+$weight400:400;
+$weight500:500;
+$purple:#8643DC;
+$black:#000;
+$darkgrey:#A8A0B0;
+$linegrey:#DAD2E3;
+$white:#fff;
+$pinkpurle:#C84DE4;
+$pink:#FF87CC;
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+@mixin flexRow{
+    display: flex;
+    flex-direction: row;
+}
+@mixin center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapp{
+    width:100%;
+    height: 120vh;
+    padding: 50px 165px;
+    @include flexColumn();
+    justify-content: space-between;
+    background: linear-gradient(180deg, rgba(187, 133, 255, 0.166) -8.54%, rgba(255, 244, 251, 0.2) 100%);
+    .card__wrapp{
+        @include flexColumn();
+        .txt__card{
+            @include flexColumn();
+            margin-bottom:35px;
+            .top__txt{
+                @include flexColumn();
+                margin-bottom: 25px;
+                h5{
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: $purple;
+                    font-family: $poppins;
+                    font-weight: $weight400;
+                    margin-bottom: 8px;
+                    &:hover{
+                        transition: 0.7s;
+                        color: $black;
+                        cursor: pointer;
+                    }
+                }
+                .line__top{
+                    width: 50px;
+                    height: 2px;
+                    background-color: $purple;
+                }
+            }
+            .bottom__txt{
+                @include flexRow();
+                align-items: flex-start;
+                justify-content: space-between;
+                h3{
+                    width: 511px;
+                    height: 156px;
+                    font-size: 34px;
+                    line-height: 52px;
+                    color: $black;
+                    font-family: $roboto;
+                    font-weight: $weight500;
+                }
+                p{
+                    font-size: 22px;
+                    line-height: 28px;
+                    text-decoration-line: underline;
+                    font-family: $roboto;
+                    font-weight: $weight400;
+                    color: $purple;
+                    cursor: pointer;
+                }
+            }
+        }
+        .main__card{
+            @include flexColumn();
+            form{
+                @include flexColumn();
+                input{
+                    height: 51px;
+                    background: transparent;
+                    outline: none;
+                    padding-left: 5px;
+                    font-family: $poppins;
+                    font-weight: $weight400;
+                    color: $purple;
+                    border-top: none;
+                    border-left: none;
+                    border-right: none;
+                    border-bottom: 1px solid #DAD2E3;
+                    cursor: pointer;
+                    margin-bottom: 20px;
+                    &::placeholder{
+                        color: $darkgrey;
+                    }
+                }
+                .btn__row{
+                    @include flexRow();
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    a{
+                        width: 150px;
+                        height: 49px;
+                        border-radius: 100px;
+                        background-color: $purple;
+                        color: $white;
+                        font-size: 14px;
+                        line-height: 27px;
+                        font-weight: $weight500;
+                        font-family: $poppins;
+                        @include center();
+                        cursor: pointer;
+                        &:hover{
+                        transition: 1s;
+                        background-color: $black;
+                        }                        
+                    }
+                    }
+                    .right__btns{
+                        @include flexRow();
+                        align-items: center;
+                        .btn__pin{
+                            background-image: url('img/pin.svg');
+                            background-size: cover;
+                            width: 18px;
+                            height: 19px;
+                        }
+                        .btn__arrow{
+                            background-image: url('img/arrow.svg');
+                            background-size: cover;
+                            width: 30px;
+                            height: 30px;
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .socials__wrapp{
+       @include center();
+       flex-direction: column;
+        h3{
+            font-family: $poppins;
+            font-weight: $weight500;
+            color: $black;
+            font-size: 28px;
+            line-height: 54px;
+        }
+        .btns__socials{
+            @include flexRow();
+            align-items: center;
+            margin-top: 25px;
+            .btn1__socials{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .triangles__btn1{
+                  background-image: url('img/triangles.png');
+                  background-size: cover;
+                  width: 50px;
+                  height: 50px;
+                  &:hover{
+                      transform: rotate(90deg);
+                      transition: 2s;
+                  }
+                }
+                .logo__btn1{
+                  background-image: url('img/instagram.svg');
+                  background-size: cover;
+                  width: 20px;
+                  height: 20px;
+                  position: absolute;
+                }
+              }
+              .btn2__socials{
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  margin: 0 35px 0 35px;
+                  .triangles__btn2{
+                    background-image: url('img/triangles.png');
+                    background-size: cover;
+                    width: 50px;
+                    height: 50px;
+                    &:hover{
+                        transform: rotate(90deg);
+                        transition: 2s;
+                    }
+                  }
+                  .logo__btn2{
+                    background-image: url('img/twitter.svg');
+                    background-size: cover;
+                    width: 22px;
+                    height: 22px;
+                    position: absolute;
+                  }
+              }
+              .btn3__socials{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                .triangles__btn3{
+                  background-image: url('img/triangles.png');
+                  background-size: cover;
+                  width: 50px;
+                  height: 50px;
+                  &:hover{
+                      transform: rotate(90deg);
+                      transition: 2s;
+                  }
+                }
+                .logo__btn3{
+                  background-image: url('img/github.svg');
+                  background-size: cover;
+                  width: 24px;
+                  height: 24px;
+                  position: absolute;
+                }
+            }
+        }
+    }
+
